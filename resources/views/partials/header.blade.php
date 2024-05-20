@@ -4,10 +4,10 @@
         <ul class="d-flex">
             <li>
                 @foreach ($links as $link)
-                        <a class="{{Route::currentRouteName() == 'home' ? 'active' : ''}}"
-                            href="{{route('home')}}">{{$link}}</a>
-                    </li>
+                    <a class="{{Route::currentRouteName() == 'home' ? 'active' : ''}}"
+                        href="{{route('home')}}">{{$link}}</a>
                 @endforeach
+            </li>
         </ul>
     </nav>
 </header>
