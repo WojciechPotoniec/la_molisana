@@ -2,12 +2,12 @@
     <nav class="d-flex justify-content-center align-items-center py-3">
         <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC logo" />
         <ul class="d-flex">
-            <li>
-                @foreach ($links as $link)
+            @foreach ($links as $link)
+                <li>
                     <a class="{{Route::currentRouteName() == 'home' ? 'active' : ''}}"
                         href="{{route('home')}}">{{$link}}</a>
-                @endforeach
-            </li>
+                </li>
+            @endforeach
         </ul>
     </nav>
 </header>
