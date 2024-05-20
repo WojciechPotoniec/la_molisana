@@ -64,3 +64,50 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Installazione Laravel
+
+```bash
+cd your parent_folder_path
+
+composer create-project --prefer-dist laravel/laravel:^10.0 your_project_name_here
+
+cd your_project_name_here
+
+code . -r
+
+php artisan serve
+
+ctrl + c
+```
+## Configurazione Laravel
+```bash
+composer require pacificdev/laravel_9_preset
+
+php artisan preset:ui bootstrap
+
+npm install
+
+npm install --save @fortawesome/fontawesome-free
+
+#in vite config aggiungo agli alias
+'~@fortawesome': path.resolve(__dirname, 'node_modules/@fortawesome'),
+
+#copio la cartella dei webfont e se voglio la rinomino
+
+#in resources scss app.scss importo fontawesome
+$fa-font-path: "../webfonts" !default;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+```
+# Test
+```bash
+#lancio partire server web
+php artisan serve
+
+#lancio server vite
+npm run dev
+```
