@@ -11,5 +11,4 @@
   <div class="load d-flex justify-content-center align-items-center">
     <button>Load More</button>
   </div>
-  </div>
 </main>
