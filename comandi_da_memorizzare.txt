@@ -1,0 +1,3 @@
+{composer dump-autoload}
+{php artisan cache:clear} per pulire la cache
+{php artisan config:cache}

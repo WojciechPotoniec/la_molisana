@@ -18,4 +18,11 @@ INSTALLAZIONE template_base Laravel da 0:
 
 9. Completata tutta la procedura possiamo lanciare il comando {npm install} che legge tutte le modifiche da package.json e installa tutti i pacchetti di npm
 
-10. Infine apriamo due prompt separati e per testare se tutto funziona correttamente dobbiamo far partire i server di laravel e vite tramite il comando {php artisan serve} & {npm run dev}
+10. Se vogliamo possiamo installare il pacchetto dei fontawesome tramite i seguenti comandi:
+
+11. {npm install --save @fortawesome/fontawesome-free} e poi in vite config aggiungo agli alias
+'~@fortawesome': path.resolve(__dirname, 'node_modules/@fortawesome'),
+
+12. Copio la cartella dei webfont da node_modules/@fortawesome/webfonts e se voglio la rinomino
+
+13. Infine apriamo due prompt separati e per testare se tutto funziona correttamente dobbiamo far partire i server di laravel e vite tramite il comando {php artisan serve} & {npm run dev}
